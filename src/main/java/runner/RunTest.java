@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features = {"src/main/java/features/Login.feature","src/main/java/features/Login_Pos_Neg.feature"},
+@CucumberOptions(features = {"src/main/java/features"},
                  glue = "stepDefinitions"
 		        )
 

@@ -1,10 +1,12 @@
 package stepDefinitions;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import cucumber.api.DataTable;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -31,6 +33,7 @@ public class LoginSteps {
 		String scenarioStatus = sc.getStatus();
 		String scenarioName = sc.getName();
 		System.out.println("The Status of the Scenario "+scenarioName+" is: "+scenarioStatus);
+		driver.close();
 	}
 	
 	@Given("Lanuch the browser")
@@ -79,6 +82,13 @@ public class LoginSteps {
 	public void printTheErrorMessage(){
 		String errMsg = driver.findElementById("errorDiv").getText();
 		System.out.println(errMsg);
+	}
+	
+	@When("Enter the username and password")
+	public void enterUsernameAndPassword(DataTable dt){
+		List<List<String>> records = dt.raw();
+		driver.findElementById("username").sendKeys(records.get(1).get(0));
+		driver.findElementById("password").sendKeys(records.get(1).get(1));
 	}
 
 }
