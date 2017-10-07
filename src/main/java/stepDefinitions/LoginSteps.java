@@ -5,7 +5,11 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.But;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -13,6 +17,21 @@ import cucumber.api.java.en.When;
 public class LoginSteps {
 	
 	public static RemoteWebDriver driver;
+	
+	@Before
+	public void executeBeforeScenario(Scenario sc){
+		String scenarioName = sc.getName();
+		String scenarioId = sc.getId();
+		System.out.println("Starting the Execution of the Scenario: "+scenarioName);
+		System.out.println("ID of the Scenario: "+scenarioId);
+	}
+	
+	@After
+	public void executeAfterScenario(Scenario sc){
+		String scenarioStatus = sc.getStatus();
+		String scenarioName = sc.getName();
+		System.out.println("The Status of the Scenario "+scenarioName+" is: "+scenarioStatus);
+	}
 	
 	@Given("Lanuch the browser")
 	public void lanuchTheBrowser(){
@@ -54,6 +73,12 @@ public class LoginSteps {
 	public void printTheWelcomeMessage(){
 		String msg = driver.findElementByXPath("//div[@id='form']/h2").getText();
 		System.out.println(msg);
+	}
+	
+	@But("Print the error message")
+	public void printTheErrorMessage(){
+		String errMsg = driver.findElementById("errorDiv").getText();
+		System.out.println(errMsg);
 	}
 
 }
