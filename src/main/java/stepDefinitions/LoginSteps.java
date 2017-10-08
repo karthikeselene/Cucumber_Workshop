@@ -16,7 +16,7 @@ public class LoginSteps extends BaseSteps{
 	
 	@Given("Lanuch the browser")
 	public void lanuchTheBrowser(){
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 	
