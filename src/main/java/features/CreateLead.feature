@@ -1,5 +1,7 @@
+@Satish
 Feature: Create Lead functionlaity in opentaps site
 
+@regression
 Scenario Outline: Create Lead functionlaity in opentaps site(Positive)
 Given Lanuch the browser
 And Launch the url
@@ -15,7 +17,6 @@ And Enter the first name <firstName>
 And Enter the last name <lastName>
 And Click on the create lead button
 Then Print the company name in the view lead
-
 Examples:
 | companyName | firstName   | lastName  |
 | Ameex       | Karthikeyan | Rajendran |
