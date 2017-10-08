@@ -4,37 +4,15 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import cucumber.api.DataTable;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.But;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class LoginSteps {
-	
-	public static RemoteWebDriver driver;
-	
-	@Before
-	public void executeBeforeScenario(Scenario sc){
-		String scenarioName = sc.getName();
-		String scenarioId = sc.getId();
-		System.out.println("Starting the Execution of the Scenario: "+scenarioName);
-		System.out.println("ID of the Scenario: "+scenarioId);
-	}
-	
-	@After
-	public void executeAfterScenario(Scenario sc){
-		String scenarioStatus = sc.getStatus();
-		String scenarioName = sc.getName();
-		System.out.println("The Status of the Scenario "+scenarioName+" is: "+scenarioStatus);
-		driver.close();
-	}
+public class LoginSteps extends BaseSteps{	
 	
 	@Given("Lanuch the browser")
 	public void lanuchTheBrowser(){
@@ -89,6 +67,16 @@ public class LoginSteps {
 		List<List<String>> records = dt.raw();
 		driver.findElementById("username").sendKeys(records.get(1).get(0));
 		driver.findElementById("password").sendKeys(records.get(1).get(1));
+	}
+	
+	@And("Click the CRM/SFA link in the home page")
+	public void clickCrmsfaLink(){
+		driver.findElementByLinkText("CRM/SFA").click();
+	}
+	
+	@And("Click the Creat Lead link in the menu")
+	public void clickCreatLeadLink(){
+		driver.findElementByLinkText("Creat Lead");
 	}
 
 }
