@@ -67,16 +67,6 @@ public class LoginSteps extends BaseSteps{
 		List<List<String>> records = dt.raw();
 		driver.findElementById("username").sendKeys(records.get(1).get(0));
 		driver.findElementById("password").sendKeys(records.get(1).get(1));
-	}
-	
-	@And("Click the CRM/SFA link in the home page")
-	public void clickCrmsfaLink(){
-		driver.findElementByLinkText("CRM/SFA").click();
-	}
-	
-	@And("Click the Creat Lead link in the menu")
-	public void clickCreatLeadLink(){
-		driver.findElementByLinkText("Creat Lead");
-	}
+	}	
 
 }
