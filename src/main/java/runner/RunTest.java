@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features = {"src/main/java/features"},
+@CucumberOptions(features = {"src/main/java/features/CreateLead.feature"},
                  glue = "stepDefinitions",
                  plugin = {"html:target/cucumber",
                 		   "pretty:target/pretty.txt"},
