@@ -3,7 +3,9 @@ package stepDefinitions;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
@@ -35,38 +37,45 @@ public class LoginSteps extends BaseSteps{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
+	@FindBy(id = "username") WebElement usrName;
 	@When("Enter the userName as (.*)")
 	public void enterTheUserName(String userName){
-		driver.findElementById("username").sendKeys(userName);
+		usrName.sendKeys(userName);
 	}
 	
+	@FindBy(id = "password") WebElement pass;
 	@And("Enter the password as (.*)")
 	public void enterThePassword(String password){
-		driver.findElementById("password").sendKeys(password);
+		pass.sendKeys(password);
 	}
 	
+	@FindBy(xpath = "//form[@id='login']/p[3]/input") WebElement login_Button;
 	@And("Click the login button")
 	public void clickTheLoginButton(){
-		driver.findElementByXPath("//form[@id='login']/p[3]/input").click();
+		login_Button.click();
 	}
 	
+	@FindBy(xpath = "//div[@id='form']/h2") WebElement wmsg;
 	@Then("Print the welcome message")
 	public void printTheWelcomeMessage(){
-		String msg = driver.findElementByXPath("//div[@id='form']/h2").getText();
+		String msg = wmsg.getText();
 		System.out.println(msg);
 	}
 	
+	@FindBy(id = "errorDiv") WebElement emsg;
 	@But("Print the error message")
 	public void printTheErrorMessage(){
-		String errMsg = driver.findElementById("errorDiv").getText();
+		String errMsg = emsg.getText();
 		System.out.println(errMsg);
 	}
 	
+	@FindBy(id = "username") WebElement uName;
+	@FindBy(id = "password") WebElement password;
 	@When("Enter the username and password")
 	public void enterUsernameAndPassword(DataTable dt){
 		List<List<String>> records = dt.raw();
-		driver.findElementById("username").sendKeys(records.get(1).get(0));
-		driver.findElementById("password").sendKeys(records.get(1).get(1));
-	}	
+		uName.sendKeys(records.get(1).get(0));
+		password.sendKeys(records.get(1).get(1));
+	}
 
 }
