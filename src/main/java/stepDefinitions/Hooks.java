@@ -16,7 +16,7 @@ public class Hooks extends BaseSteps{
 	
 	@After
 	public void executeAfterScenario(Scenario sc){
-		String scenarioStatus = sc.getStatus();
+		String scenarioStatus = sc.getStatus().name();
 		String scenarioName = sc.getName();
 		System.out.println("The Status of the Scenario "+scenarioName+" is: "+scenarioStatus);
 		driver.close();

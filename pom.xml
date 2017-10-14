@@ -6,9 +6,9 @@
   <dependencies>
   <!-- Cucumber-java8 -->
   <dependency>
-    <groupId>info.cukes</groupId>
+    <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java8</artifactId>
-    <version>1.2.5</version>
+    <version>2.0.1</version>
   </dependency>
   <!-- Selenium-java -->
   <dependency>
@@ -42,16 +42,16 @@
   </dependency>
   <!-- Cucumber-junit -->
   <dependency>
-    <groupId>info.cukes</groupId>
+    <groupId>io.cucumber</groupId>
     <artifactId>cucumber-junit</artifactId>
-    <version>1.2.5</version>
+    <version>2.0.1</version>
     <scope>test</scope>
   </dependency>
   <!-- Cucumber-testng -->
   <dependency>
-    <groupId>info.cukes</groupId>
+    <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
-    <version>1.1.5</version>
+    <version>2.0.1</version>
   </dependency>  
   <!-- YamlBeans -->
   <dependency>
