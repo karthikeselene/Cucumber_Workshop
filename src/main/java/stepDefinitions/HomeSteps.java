@@ -2,10 +2,15 @@ package stepDefinitions;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import cucumber.api.java.en.And;
 
 public class HomeSteps extends BaseSteps{
+	
+	public HomeSteps(){
+		PageFactory.initElements(driver, this);
+	}
 	
 	@FindBy(linkText = "CRM/SFA") WebElement crmsfa_Link;
 	@And("Click the CRM/SFA link in the home page")
