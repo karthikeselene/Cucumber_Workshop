@@ -16,7 +16,7 @@ public class HomeSteps extends BaseSteps{
 	@FindBy(linkText = "Creat Lead") WebElement creatLead_Link;
 	@And("Click the Creat Lead link in the menu")
 	public void clickCreatLeadLink(){
-		driver.findElementByLinkText("Create Lead").click();
+		creatLead_Link.click();
 	}
 
 }
