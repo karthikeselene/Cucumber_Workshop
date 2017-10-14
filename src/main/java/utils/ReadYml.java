@@ -2,7 +2,6 @@ package utils;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,6 +14,7 @@ import stepDefinitions.BaseSteps;
 
 public class ReadYml extends BaseSteps{
 	
+	@SuppressWarnings("unchecked")
 	@Test
 	public void readYmlFile() throws FileNotFoundException, YamlException{
 		YamlReader reader = new YamlReader(new FileReader("./testdata/testdata.yml"));
