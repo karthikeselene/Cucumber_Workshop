@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -21,13 +20,7 @@ public class LoginSteps extends BaseSteps{
 		PageFactory.initElements(driver, this);
 	}
 	
-	@Given("Lanuch the browser")
-	public void lanuchTheBrowser(){
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
-		driver = new ChromeDriver();
-	}
-	
-	@And("Launch the url")
+	@Given("Launch the url")
 	public void launchTheUrl(){
 		driver.get("http://leaftaps.com/opentaps/control/main");
 	}

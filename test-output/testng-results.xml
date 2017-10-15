@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">Launch the url (PASSED : 6s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Maximize the window (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Set timeouts (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Enter the userName as DemoSalesManager (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Enter the password as crmsfa (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Click the login button (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Print the welcome message (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Launch the url (PASSED : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Maximize the window (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Set timeouts (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Enter the userName as DemoCSR (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Enter the password as crmsfa (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Click the login button (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Print the welcome message (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Launch the url (PASSED : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Maximize the window (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Set timeouts (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Enter the userName as DemoSalesManager1 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Enter the password as crmsfa1 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Click the login button (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Print the error message (PASSED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51860" started-at="2017-10-14T17:32:29Z" finished-at="2017-10-14T17:33:21Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="RunTestNg.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunTestNg@5622fdf]" name="runScenario" class="runner.RunTestNg"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="51860" started-at="2017-10-14T17:32:29Z" finished-at="2017-10-14T17:33:21Z">
+      <class name="runner.RunTestNg">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunTestNg@5622fdf]" name="setUpClass" is-config="true" duration-ms="1783" started-at="2017-10-14T23:02:29Z" finished-at="2017-10-14T23:02:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunTestNg@5622fdf]" name="runScenario" duration-ms="24214" started-at="2017-10-14T23:02:31Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2017-10-14T23:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login into the LeadfOpensite both positive and negative cases"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">Launch the url (PASSED : 6s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Maximize the window (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Set timeouts (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Enter the userName as DemoSalesManager (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Enter the password as crmsfa (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Click the login button (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Print the welcome message (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunTestNg@5622fdf]" name="runScenario" duration-ms="13424" started-at="2017-10-14T23:02:55Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2017-10-14T23:03:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login into the LeadfOpensite both positive and negative cases"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">Launch the url (PASSED : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Maximize the window (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Set timeouts (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Enter the userName as DemoCSR (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Enter the password as crmsfa (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Click the login button (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Print the welcome message (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunTestNg@5622fdf]" name="runScenario" duration-ms="12033" started-at="2017-10-14T23:03:08Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2017-10-14T23:03:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Negative Scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login into the LeadfOpensite both positive and negative cases"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">Launch the url (PASSED : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Maximize the window (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Set timeouts (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Enter the userName as DemoSalesManager1 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Enter the password as crmsfa1 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Click the login button (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Print the error message (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunTestNg@5622fdf]" name="tearDownClass" is-config="true" duration-ms="170" started-at="2017-10-14T23:03:20Z" finished-at="2017-10-14T23:03:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunTestNg -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -2,8 +2,7 @@
 Feature: Login into the LeadfOpensite both positive and negative cases
 
 Background: These steps should executes before each scenarios in this feature file
-Given Lanuch the browser
-And Launch the url
+Given Launch the url
 And Maximize the window
 And Set timeouts
 
